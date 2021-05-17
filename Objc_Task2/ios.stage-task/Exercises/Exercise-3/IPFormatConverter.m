@@ -25,15 +25,17 @@ bool isNegative = FALSE, isInvalid = FALSE;
             isInvalid = true;
             break;
         }
-    if (isNegative)return @"Negative numbers are not valid for input.";
-    if (isInvalid)return @"The numbers in the input array can be in the range from 0 to 255.";
+if (isNegative)
+        return @"Negative numbers are not valid for input.";
+if (isInvalid)
+        return @"The numbers in the input array can be in the range from 0 to 255.";
     
     
-    NSString *output = [NSString stringWithFormat:@"%d.%d.%d.%d", [mutableArray[0] intValue],
+NSString *newString = [NSString stringWithFormat:@"%d.%d.%d.%d", [mutableArray[0] intValue],
                         [mutableArray[1] intValue], [mutableArray[2] intValue],
                         [mutableArray[3] intValue]];
     
-    return output;
+    return newString;
 }
 
 @end
